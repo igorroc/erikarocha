@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+
+	font-family: "Montserrat", sans-serif;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+header {
+	width: 100vw;
+	height: 70px;
+
+	display: flex;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	z-index: 3;
+
+	background: linear-gradient(#000a, #0000);
+	color: white;
+}
+
+header #logo {
+	margin-left: min(800px, 20vw);
+}
+
+header > #logo > a > img {
+	width: 70px;
+}
+
+#menus {
+	margin-left: auto;
+	margin-right: 200px;
+	display: flex;
+	gap: 10px;
+
+	align-items: center;
+}
+
+#menus a {
+	text-decoration: none;
+	color: white;
+}
+
+#menus a:hover {
+	border-bottom: 1px solid white;
+}
+
+#menus .menuActive {
+	border-bottom: 2px solid white;
+	font-weight: bold;
+}
+
+#menus .ctaButton {
+	border: 1px solid white;
+	padding: 4px 10px;
+
+	transition: color 100ms ease, background-color 100ms ease;
+}
+
+#menus .ctaButton:hover {
+	background-color: #f87700;
+	color: white;
+}
+
+main {
+	height: 95vh;
+
+	background-image: url(./assets/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+}
+
+main::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #0009;
+}
+
+main > h2 {
+    margin-top: 300px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+main > h1 {
+	margin-top: 0px;
+	z-index: 2;
+	color: white;
+	text-align: center;
+
+    font-family: 'Abril Fatface', cursive;
+	font-size: 5em;
+    font-weight: normal;
+}
+
+main > button {
+	background: none;
+
+	margin-top: auto;
+	margin-bottom: 30px;
+
+	width: 400px;
+	height: 75px;
+
+	font-size: 2em;
+
+	z-index: 3;
+	color: white;
+	border: 2px solid white;
+	padding: 4px 10px;
+
+	cursor: pointer;
+
+	transition: color 100ms ease, background-color 100ms ease;
+}
+
+main > button:hover {
+	background-color: #f87700;
+}
+
+#instagram {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+#instagram > h4{
+    margin-bottom: 30px;
+
+    font-size: 1.4em;
+
+    text-transform: uppercase;
+}
+
+#instagram > h4 > a{
+    color: #f78f2e;
+}
+
+#instagram > ul {
+	display: flex;
+    justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+#instagram > ul > li {
+	width: 180px;
+	height: 180px;
+	background-color: #f78f2e;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: #212121;
+}
+
+footer > #info {
+	width: 100%;
+	max-width: 800px;
+
+	margin: 0 auto;
+	padding: 20px;
+
+	font-size: 1.2em;
+
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer > #info > div > ul {
+	margin-top: 20px;
+}
+footer > #info > div > ul > li {
+	font-size: 0.9em;
+	margin-top: 5px;
+}
+
+footer > #info > div > ul > li > a {
+    color: #EB8727;
+}
+
+footer > #info > div > div {
+    margin-bottom: 30px;
+}
+
+footer > #copy {
+    width: 100%;
+    
+	padding: 20px 0;
+    
+	background-color: #1e1e1e;
+	margin-top: auto;
+}
+
+footer > #copy > p {
+    text-align: center;
+}
+
+footer > #copy > p > a{
+    color: #EB8727;
+}
