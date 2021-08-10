@@ -17,7 +17,7 @@ header {
 }
 
 header #logo {
-	margin-left: min(800px, 20vw);
+	margin-left: 200px;
 }
 
 header > #logo > a > img {
@@ -57,4 +57,22 @@ header > #logo > a > img {
 #menus .ctaButton:hover {
 	background-color: #f87700;
 	color: white;
+}
+
+@media (max-width: 900px) {
+	header #logo {
+		margin-left: 100px;
+	}
+	header #menus{
+		margin-right: 100px;
+	}
+}
+
+@media (max-width: 600px) {
+	header #logo {
+		margin-left: 50px;
+	}
+	header #menus{
+		margin-right: 50px;
+	}
 }

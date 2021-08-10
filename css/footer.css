@@ -29,15 +29,15 @@ footer > #info > div > ul > li {
 }
 
 footer > #info > div > ul > li > a {
-    color: #EB8727;
+	color: #EB8727;
 }
 
 footer > #info > div > div {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 footer > #copy {
-    width: 100%;
+	width: 100%;
     
 	padding: 20px 0;
     
@@ -46,9 +46,28 @@ footer > #copy {
 }
 
 footer > #copy > p {
-    text-align: center;
+	text-align: center;
 }
 
 footer > #copy > p > a{
-    color: #EB8727;
+	color: #EB8727;
+}
+
+@media (max-width: 900px) {
+	footer #info{
+		width: calc(100% - 100px);
+		margin: 0 50px;
+	}
+	footer #copy{
+		width: calc(100% - 20px);
+		padding: 20px 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 600px){
+	footer #info{
+		flex-direction: column; 
+		gap: 30px;
+	}
 }
