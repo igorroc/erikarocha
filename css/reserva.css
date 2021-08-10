@@ -25,17 +25,17 @@ body {
 	padding: 150px 0;
 }
 
-#main::before{
-    content: "";
+#main::before {
+	content: "";
 
-    position: absolute;
+	position: absolute;
 	top: 0;
-	
+
 	z-index: 0;
-	
-    width: 100%;
-    height: 100%;
-    background-color: #0009;
+
+	width: 100%;
+	height: 100%;
+	background-color: #0009;
 }
 
 #wrapperMain {
@@ -44,10 +44,10 @@ body {
 	transform: translateX(-50%);
 
 	width: 500px;
-	
+
 	margin: 0 auto;
-	padding: 100px;
-	
+	padding: 70px;
+
 	background-color: #ebe6dc;
 	box-shadow: 5px 5px 10px #0009;
 
@@ -63,6 +63,25 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+}
+
+input[type="submit"] {
+	background: none;
+	border: 1px solid #EB8727;
+	padding: 4px 10px;
+
+	font-family: "Montserrat", sans-serif;
+	font-size: 1em;
+
+	cursor: pointer;
+
+	transition: color 100ms ease, background-color 100ms ease;
+}
+
+input[type="submit"]:hover {
+	background: #EB8727;
+
+	color: white;
 }
 
 footer {

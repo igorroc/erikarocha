@@ -26,7 +26,7 @@
 		<div id="main">
 			<div id="wrapperMain">
 				<h3>Faça sua reserva agora!</h3>
-				<form>
+				<form onsubmit="reservar()">
 					<div id="inputs">
 						<div>
 							<label for="nome"
@@ -61,7 +61,6 @@
 								min="08:00"
 								max="18:00"
 								pattern="[0-9]{2}:[0-9]{2}"
-								step="600"
 								required
 							/>
 						</div>
@@ -72,7 +71,6 @@
 					</div>
 				</form>
 			</div>
-			<div class="sombra"></div>
 		</div>
 		<footer>
 			<div id="info">
@@ -116,5 +114,7 @@
 				</p>
 			</div>
 		</footer>
+
+		<script src="./js/reserva.js"></script>
 	</body>
 </html>
