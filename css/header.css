@@ -1,0 +1,60 @@
+header {
+	width: 100vw;
+	height: 70px;
+
+	display: flex;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	z-index: 3;
+
+	background: linear-gradient(#000a, #0000);
+	color: white;
+}
+
+header #logo {
+	margin-left: min(800px, 20vw);
+}
+
+header > #logo > a > img {
+	width: 70px;
+}
+
+#menus {
+	margin-left: auto;
+	margin-right: 200px;
+	display: flex;
+	gap: 10px;
+
+	align-items: center;
+}
+
+#menus a {
+	text-decoration: none;
+	color: white;
+}
+
+#menus a:hover {
+	border-bottom: 1px solid white;
+}
+
+#menus .menuActive {
+	border-bottom: 2px solid white;
+	font-weight: bold;
+}
+
+#menus .ctaButton {
+	border: 1px solid white;
+	padding: 4px 10px;
+
+	transition: color 100ms ease, background-color 100ms ease;
+}
+
+#menus .ctaButton:hover {
+	background-color: #f87700;
+	color: white;
+}
