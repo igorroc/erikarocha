@@ -1,0 +1,42 @@
+#instagram {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+#instagram > h4{
+    margin-bottom: 30px;
+
+    font-size: 1.4em;
+
+    text-transform: uppercase;
+}
+
+#instagram > h4 > a{
+    color: #f78f2e;
+}
+
+#instagram > ul {
+	display: flex;
+    justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+#instagram > ul > li {
+	width: 180px;
+	height: 180px;
+	background-color: #f78f2e;
+
+    cursor: pointer;
+
+    transition: transform 300ms ease;
+}
+
+#instagram > ul > li:hover{
+    transform: scale(1.1);
+}

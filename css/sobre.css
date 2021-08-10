@@ -1,7 +1,88 @@
 @import url('./header.css');
+@import url('./footer.css');
+@import url('./fonts.css');
+@import url('./instagram.css');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+}
 
 body {
 	font-size: 16px;
 
 	font-family: "Montserrat", sans-serif;
+}
+
+main{
+	width: 90%;
+	max-width: 800px;
+	height: 70vh;
+	
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+}
+
+main > h3{
+	font-size: 1.5em;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+main > h4{
+	font-size: 1.2em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+}
+
+.divisionLine{
+	width: 100%;
+	height: 3px;
+
+	background-color: black;
+}
+
+header {
+	background: none;
+	background-color: white;
+	color: black;
+}
+
+#menus a {
+	color: black;
+}
+
+#menus a:hover {
+	border-bottom: 1px solid black;
+}
+
+#menus .menuActive {
+	border-bottom: 2px solid black;
+	font-weight: bold;
+}
+
+#menus .ctaButton {
+	border: 1px solid black;
+	padding: 4px 10px;
+
+	transition: color 100ms ease, background-color 100ms ease;
+}
+
+#menus .ctaButton:hover {
+	background-color: #f87700;
+	color: black;
 }

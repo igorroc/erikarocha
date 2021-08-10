@@ -1,7 +1,70 @@
-@import url('./header.css');
+@import url("./header.css");
+@import url("./footer.css");
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
 	font-size: 16px;
 
 	font-family: "Montserrat", sans-serif;
+}
+
+#main {
+	position: relative;
+
+	background-image: url("../assets/salon.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	height: 50vh;
+
+	padding: 150px 0;
+}
+
+#main::before{
+    content: "";
+
+    position: absolute;
+	top: 0;
+	
+	z-index: 0;
+	
+    width: 100%;
+    height: 100%;
+    background-color: #0009;
+}
+
+#wrapperMain {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 500px;
+	
+	margin: 0 auto;
+	padding: 100px;
+	
+	background-color: #ebe6dc;
+	box-shadow: 5px 5px 10px #0009;
+
+	border-radius: 10px;
+}
+
+#wrapperMain > h3 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+#inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer {
+	margin-top: auto;
 }
