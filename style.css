@@ -185,6 +185,14 @@ main > button:hover {
 	width: 180px;
 	height: 180px;
 	background-color: #f78f2e;
+
+    cursor: pointer;
+
+    transition: transform 300ms ease;
+}
+
+#instagram > ul > li:hover{
+    transform: scale(1.1);
 }
 
 footer {
